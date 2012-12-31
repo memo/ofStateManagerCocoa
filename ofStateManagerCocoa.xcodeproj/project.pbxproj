@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBFDB5021690E1290052A672 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFDB5011690E1290052A672 /* Cocoa.framework */; };
+		BBFDB5201690E1290052A672 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFDB51F1690E1290052A672 /* SenTestingKit.framework */; };
+		BBFDB5211690E1290052A672 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFDB5011690E1290052A672 /* Cocoa.framework */; };
+		BBFDB5411690F9EE0052A672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDB5371690F9EE0052A672 /* AppDelegate.m */; };
+		BBFDB5421690F9EE0052A672 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BBFDB5381690F9EE0052A672 /* Credits.rtf */; };
+		BBFDB5431690F9EE0052A672 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBFDB53A1690F9EE0052A672 /* InfoPlist.strings */; };
+		BBFDB5441690F9EE0052A672 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFDB53C1690F9EE0052A672 /* MainMenu.xib */; };
+		BBFDB5451690F9EE0052A672 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDB53E1690F9EE0052A672 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBFDB5221690E1290052A672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBFDB4F41690E1290052A672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBFDB4FC1690E1290052A672;
+			remoteInfo = ofStateManagerGui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBFDB4FD1690E1290052A672 /* ofStateManagerCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofStateManagerCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFDB5011690E1290052A672 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BBFDB5041690E1290052A672 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BBFDB5051690E1290052A672 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BBFDB5061690E1290052A672 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BBFDB51E1690E1290052A672 /* ofStateManagerCocoaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ofStateManagerCocoaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFDB51F1690E1290052A672 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BBFDB5361690F9EE0052A672 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBFDB5371690F9EE0052A672 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBFDB5391690F9EE0052A672 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BBFDB53B1690F9EE0052A672 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBFDB53D1690F9EE0052A672 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BBFDB53E1690F9EE0052A672 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBFDB4FA1690E1290052A672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDB5021690E1290052A672 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFDB51A1690E1290052A672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDB5201690E1290052A672 /* SenTestingKit.framework in Frameworks */,
+				BBFDB5211690E1290052A672 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBFDB4F21690E1290052A672 = {
+			isa = PBXGroup;
+			children = (
+				BBFDB5351690F9EE0052A672 /* src */,
+				BBFDB5001690E1290052A672 /* Frameworks */,
+				BBFDB4FE1690E1290052A672 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBFDB4FE1690E1290052A672 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDB4FD1690E1290052A672 /* ofStateManagerCocoa.app */,
+				BBFDB51E1690E1290052A672 /* ofStateManagerCocoaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBFDB5001690E1290052A672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDB5011690E1290052A672 /* Cocoa.framework */,
+				BBFDB51F1690E1290052A672 /* SenTestingKit.framework */,
+				BBFDB5031690E1290052A672 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBFDB5031690E1290052A672 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDB5041690E1290052A672 /* AppKit.framework */,
+				BBFDB5051690E1290052A672 /* CoreData.framework */,
+				BBFDB5061690E1290052A672 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BBFDB5351690F9EE0052A672 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDB5361690F9EE0052A672 /* AppDelegate.h */,
+				BBFDB5371690F9EE0052A672 /* AppDelegate.m */,
+				BBFDB5381690F9EE0052A672 /* Credits.rtf */,
+				BBFDB53A1690F9EE0052A672 /* InfoPlist.strings */,
+				BBFDB53C1690F9EE0052A672 /* MainMenu.xib */,
+				BBFDB53E1690F9EE0052A672 /* main.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBFDB4FC1690E1290052A672 /* ofStateManagerCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFDB52F1690E1290052A672 /* Build configuration list for PBXNativeTarget "ofStateManagerCocoa" */;
+			buildPhases = (
+				BBFDB4F91690E1290052A672 /* Sources */,
+				BBFDB4FA1690E1290052A672 /* Frameworks */,
+				BBFDB4FB1690E1290052A672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ofStateManagerCocoa;
+			productName = ofStateManagerGui;
+			productReference = BBFDB4FD1690E1290052A672 /* ofStateManagerCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBFDB51D1690E1290052A672 /* ofStateManagerCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFDB5321690E1290052A672 /* Build configuration list for PBXNativeTarget "ofStateManagerCocoaTests" */;
+			buildPhases = (
+				BBFDB5191690E1290052A672 /* Sources */,
+				BBFDB51A1690E1290052A672 /* Frameworks */,
+				BBFDB51B1690E1290052A672 /* Resources */,
+				BBFDB51C1690E1290052A672 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBFDB5231690E1290052A672 /* PBXTargetDependency */,
+			);
+			name = ofStateManagerCocoaTests;
+			productName = ofStateManagerGuiTests;
+			productReference = BBFDB51E1690E1290052A672 /* ofStateManagerCocoaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBFDB4F41690E1290052A672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Memo Akten";
+			};
+			buildConfigurationList = BBFDB4F71690E1290052A672 /* Build configuration list for PBXProject "ofStateManagerCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BBFDB4F21690E1290052A672;
+			productRefGroup = BBFDB4FE1690E1290052A672 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBFDB4FC1690E1290052A672 /* ofStateManagerCocoa */,
+				BBFDB51D1690E1290052A672 /* ofStateManagerCocoaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBFDB4FB1690E1290052A672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDB5421690F9EE0052A672 /* Credits.rtf in Resources */,
+				BBFDB5431690F9EE0052A672 /* InfoPlist.strings in Resources */,
+				BBFDB5441690F9EE0052A672 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFDB51B1690E1290052A672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBFDB51C1690E1290052A672 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBFDB4F91690E1290052A672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDB5411690F9EE0052A672 /* AppDelegate.m in Sources */,
+				BBFDB5451690F9EE0052A672 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFDB5191690E1290052A672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBFDB5231690E1290052A672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBFDB4FC1690E1290052A672 /* ofStateManagerCocoa */;
+			targetProxy = BBFDB5221690E1290052A672 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBFDB5381690F9EE0052A672 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFDB5391690F9EE0052A672 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BBFDB53A1690F9EE0052A672 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFDB53B1690F9EE0052A672 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BBFDB53C1690F9EE0052A672 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFDB53D1690F9EE0052A672 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBFDB52D1690E1290052A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BBFDB52E1690E1290052A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BBFDB5301690E1290052A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ofStateManagerCocoa-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ofStateManagerCocoa-Info.plist";
+				PRODUCT_NAME = ofStateManagerCocoa;
+				SYMROOT = "$(PROJECT_DIR)/bin";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BBFDB5311690E1290052A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ofStateManagerCocoa-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ofStateManagerCocoa-Info.plist";
+				PRODUCT_NAME = ofStateManagerCocoa;
+				SYMROOT = "$(PROJECT_DIR)/bin";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BBFDB5331690E1290052A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ofStateManagerGui.app/Contents/MacOS/ofStateManagerGui";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ofStateManagerGui/ofStateManagerGui-Prefix.pch";
+				INFOPLIST_FILE = "ofStateManagerGuiTests/ofStateManagerGuiTests-Info.plist";
+				PRODUCT_NAME = ofStateManagerCocoaTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BBFDB5341690E1290052A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ofStateManagerGui.app/Contents/MacOS/ofStateManagerGui";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ofStateManagerGui/ofStateManagerGui-Prefix.pch";
+				INFOPLIST_FILE = "ofStateManagerGuiTests/ofStateManagerGuiTests-Info.plist";
+				PRODUCT_NAME = ofStateManagerCocoaTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBFDB4F71690E1290052A672 /* Build configuration list for PBXProject "ofStateManagerCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFDB52D1690E1290052A672 /* Debug */,
+				BBFDB52E1690E1290052A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFDB52F1690E1290052A672 /* Build configuration list for PBXNativeTarget "ofStateManagerCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFDB5301690E1290052A672 /* Debug */,
+				BBFDB5311690E1290052A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFDB5321690E1290052A672 /* Build configuration list for PBXNativeTarget "ofStateManagerCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFDB5331690E1290052A672 /* Debug */,
+				BBFDB5341690E1290052A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBFDB4F41690E1290052A672 /* Project object */;
+}
