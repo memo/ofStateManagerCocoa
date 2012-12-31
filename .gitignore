@@ -1,3 +1,9 @@
 *.xcuserstate
 
-*.xcuserstate
+*.xcworkspacedata
+
+*.xcsettings
+
+*.xcscheme
+
+ofStateManagerCocoa.xcodeproj/xcuserdata/memo.xcuserdatad/xcschemes/xcschememanagement.plist
