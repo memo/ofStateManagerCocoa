@@ -99,6 +99,7 @@
     
     NSPipe *pipe = [NSPipe pipe];
     [task setStandardOutput: pipe];
+    [task setStandardError:pipe];
     [task setStandardInput: [NSPipe pipe]];
     
     NSFileHandle *file = [pipe fileHandleForReading];
