@@ -1,0 +1,3 @@
+[submodule "bin/ofStateManager"]
+	path = bin/ofStateManager
+	url = https://github.com/bilderbuchi/ofStateManager
