@@ -23,7 +23,7 @@ In summary, this is a tool to - for any selected openFrameworks project:
 Instructions
 ===================
 
-Place bilderbuchi's ofStateManager folder containing the python scripts next to the ofStateManagerCocoa.app application bundle, and run ofStateManagerCocoa.app. 
+Place bilderbuchi's ofStateManager folder containing the python scripts next to the ofStateManagerCocoa.app application bundle (currently in the ./bin folder), and run ofStateManagerCocoa.app.
 
 i.e. the folder structure should be:   
 ./ofStateManagerCocoa.app   
@@ -32,7 +32,10 @@ i.e. the folder structure should be:
 
 The GUI is pretty straightforward and just reflects the python script parameters. Refer to bilderbuchi's instructions. 
 
+ofStateManager is currently setup as a submodule. So if you clone ofStateManagerCocoa, you should get ofStateManager too (in recent versions of git). If you don't, you need to do 'git submodule update -init' in the root of ofStateManagerCocoa followed by a 'git pull' inside ofStateManagerCocoa/bin/ofStateManager.    
+More info on submodules at   
+[http://git-scm.com/book/en/Git-Tools-Submodules](http://git-scm.com/book/en/Git-Tools-Submodules)   
+[http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/](http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/)
 
-Known Issues
-===================
-If the script terminates with an error (e.g. if the project path can't be found, one of the components has uncommitted changes, or doesn't have a git repo), the GUI doesn't know why the error occured, only that an error did occur. This isn't very helpful, you need to check in terminal what went wrong. (I can capture the terminal output if the script completes successfully, I can't capture the terminal output if the script fails). Looking for a fix.
+
+
