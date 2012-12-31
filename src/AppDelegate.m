@@ -82,14 +82,14 @@
 
 
 //-----------------------------------------------------------------------------
+// from various comments at 
 //http://stackoverflow.com/questions/412562/execute-a-terminal-command-from-a-cocoa-app
 -(NSString *)runCommand:(NSString *)commandToRun inFolder:(NSString *)folder {
     NSLog(@"*** Running command '%@'", commandToRun);
     
-    NSTask *task;
-    task = [[NSTask alloc] init];
+    NSTask *task = [[NSTask alloc] init];
     [task setLaunchPath: @"/bin/sh"];
-    
+
     NSArray *arguments = [NSArray arrayWithObjects:
                           @"-c" ,
                           [NSString stringWithFormat:@"%@", commandToRun],
@@ -99,19 +99,19 @@
     
     NSPipe *pipe = [NSPipe pipe];
     [task setStandardOutput: pipe];
+    [task setStandardInput: [NSPipe pipe]];
     
     NSFileHandle *file = [pipe fileHandleForReading];
-
-    NSMutableData *data = [NSMutableData dataWithCapacity:512];
 
     [task launch];
     
 //    NSData *data = [file readDataToEndOfFile];
+    NSMutableData *data = [NSMutableData dataWithCapacity:512];
+    
     while ([task isRunning]) { [data appendData:[file readDataToEndOfFile]]; }
     [data appendData:[file readDataToEndOfFile]];
     
     NSString *outputString = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
-//    if([outputString length] == 0) outputString = @"An error occured, and unfortunately I can't read what the error is :( Try copy & pasting the command above into terminal (from the script folder) to see what it was.";
     outputString = [NSString stringWithFormat:@"\n\nCOMMAND: %@\n\n%@", commandToRun, outputString];
     
     return outputString;
@@ -128,7 +128,6 @@
 
 //-----------------------------------------------------------------------------
 -(IBAction)onGoPressed:(id)sender {
-//    NSLog(@"onGoPressed");
     [drawer open];
     [self runScriptWithParameters:[finalCommandTextField stringValue]];
 }
@@ -136,7 +135,6 @@
 
 //-----------------------------------------------------------------------------
 -(IBAction)onHelpPressed:(id)sender {
-//    NSLog(@"onHelpPressed");
     [drawer open];
     [self runScriptWithParameters:@"-h"];
 }

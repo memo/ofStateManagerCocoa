@@ -1,7 +1,7 @@
 ofStateManagerCocoa
 ===================
 
-Cocoa GUI wrapper for Christoph Buchner's ofStateManager script
+Cocoa GUI wrapper for Christoph Buchner's ofStateManager script   
 [https://github.com/bilderbuchi/ofStateManager](https://github.com/bilderbuchi/ofStateManager)
 
 ofStateManagerCocoa by Memo Akten   
