@@ -328,12 +328,16 @@
 		BBFDB5301690E1290052A672 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ofStateManagerCocoa-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ofStateManagerCocoa-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = ofStateManagerCocoa;
+				SDKROOT = macosx10.7;
 				SYMROOT = "$(PROJECT_DIR)/bin";
 				WRAPPER_EXTENSION = app;
 			};
@@ -342,12 +346,16 @@
 		BBFDB5311690E1290052A672 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ofStateManagerCocoa-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ofStateManagerCocoa-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = ofStateManagerCocoa;
+				SDKROOT = macosx10.7;
 				SYMROOT = "$(PROJECT_DIR)/bin";
 				WRAPPER_EXTENSION = app;
 			};

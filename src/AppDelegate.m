@@ -112,8 +112,10 @@
     while ([task isRunning]) { [data appendData:[file readDataToEndOfFile]]; }
     [data appendData:[file readDataToEndOfFile]];
     
-    NSString *outputString = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    NSString *outputString = [[[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding] autorelease];
     outputString = [NSString stringWithFormat:@"\n\nCOMMAND: %@\n\n%@", commandToRun, outputString];
+    
+    [task release];
     
     return outputString;
 }
